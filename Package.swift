@@ -1,22 +1,13 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
     name: "FloatRatingView",
-    defaultLocalization: "en",
-    platforms: [
-        .iOS(.v11)
-    ],
+    platforms: [.iOS(.v15)],
     products: [
-        .library(
-            name: "FloatRatingView",
-            targets: ["FloatRatingView"])
+        .library(name: "FloatRatingView", targets: ["FloatRatingView"])
     ],
     targets: [
-        .target(
-            name: "FloatRatingView",
-            path: ".",
-            sources: ["FloatRatingView.swift"]
-        )
+        .target(name: "FloatRatingView", path: "Sources/FloatRatingView")
     ]
 )
